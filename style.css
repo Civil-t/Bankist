@@ -66,6 +66,17 @@ nav {
   color: #bbb;
 }
 
+.credentials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 10rem auto;
+  gap: 1rem;
+  color: #bbb;
+  font-size: 1.5rem;
+}
+
 .login__btn {
   border: none;
   background: none;

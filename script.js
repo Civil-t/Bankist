@@ -43,6 +43,7 @@ const labelSumIn = document.querySelector('.summary__value--in');
 const labelSumOut = document.querySelector('.summary__value--out');
 const labelSumInterest = document.querySelector('.summary__value--interest');
 const labelTimer = document.querySelector('.timer');
+const loginCredentials = document.querySelector('.credentials');
 
 // Container elements
 const containerApp = document.querySelector('.app');
@@ -179,8 +180,9 @@ btnLogin.addEventListener('click', function (e) {
     // display account owner
     labelWelcome.textContent = `Welcome, ${currentAccount.owner.split(' ')[0]}`;
 
-    // display dashboard details
+    // display dashboard details and hide login credentials
     containerApp.style.opacity = 100;
+    loginCredentials.style.display = 'none';
 
     updateUI(currentAccount);
 
